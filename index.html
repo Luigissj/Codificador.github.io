@@ -1,1 +1,84 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Press+Start+2P&family=Prosto+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_navegacao">
+            <a class="cabecalho_opcao" href="index.html">
+                <img class="cabecalho_SobreMim_Imagem" src="Image/Sobre mim - Light.png" alt="Sobre mim">
+                <p class="cabecalho_SobreMim_Texto">Sobre Mim</p>
+            </a>
+            <a class="cabecalho_opcao" href="index.html">
+                <img class="cabecalho_ENIGMA_Imagem" src="Image/Decodificador - Light.png" alt="Descriptografia">
+                <p class="cabecalho_ENIGMA_Texto">ENIGMA</p>
+            </a>
+        </div>
+    </header>
+    <main class="conteudo_Principal">
+        <div class="conteudo_Esquerdo">
+            <img id="Eu" src="Image/Eu.jpg" alt="">
+            <div class="main_conjunto_links">
+                <a class="main_links" href="">
+                    <img src="Image/Linkedin - Light.png" alt="">
+                    <span>Linkedin</span>
+                </a>
+                <a class="main_links" href="">
+                    <img src="Image/Github - Light.png" alt="">
+                    <span>Github</span>
+                </a>
+                <a class="main_links" href="">
+                    <img src="Image/Facebook - Light.png" alt="">
+                    <span>Facebook</span>
+                </a>
+            </div>
+        </div>
+        
+        <p class="main_caixaTexto">
+            Eu sou um desenvolvedor Fullstack de apenas 19 anos que busco me desenvolver de 
+            forma profissional e social. Sempre tive uma afinidade especial com a tecnologia 
+            desde jovem e minha paixão pelo desenvolvimento de sistemas me levou a descobrir 
+            o mundo do desenvolvedor; <br><br>
+
+
+            Eu busquei me especializar em Front-End, onde procuro dominar as tecnologias 
+            HTML5 e CSS. Não entendo somente os princípios básicos de criação de páginas da web, 
+            mas também procuro criar interfaces de usuário elegantes e responsivas que proporcionam 
+            uma experiência excepcional aos usuários. Seus designs são atraentes e intuitivos, o que 
+            demonstra sua atenção aos detalhes.<br><br>
+
+
+            Sempre tenho a tenacidade em aprender constantemente e, por conta da tecnologia 
+            estar em constante evolução, entendo a importância de se manter atualizado. 
+            Me dedico a aprimorar minhas habilidades, explorar novas ferramentas e frameworks, 
+            e me envolver à projetos desafiadores que ajudam-me a crescer como desenvolvedor.<br><br>
+
+
+            Meu amor pela programação e minhas habilidaeds com tecnologias 
+            como Java, Python, HTML5 e CSS, e minha dedicação incansável indica 
+            como um ótimo programador, sempre buscando um local de trabalho para 
+            aprimorar de maneira profissional e social.
+        </p>
+    </main>
+    <footer class="menu_lateral">
+        <form class="temas">
+            <ul class="opcoes_tema">
+                <li class="temas_linha">
+                    <input type="radio" class="botao_nav" name="temas" id="botao_Claro" value="Claro" onclick="verificar_Mudança_Tema()">
+                    <label for="botao_nav" class="1">Claro</label>
+                </li>
+                <li class="temas_linha">
+                    <input type="radio" class="botao_nav" name="temas" id="botao_Escuro" value="Escuro" onclick="verificar_Mudança_Tema()" checked>
+                    <label for="botao_nav" class="2">Escuro</label>
+                </li>
+            </ul>
+        </form>
+    </footer>
+</body>
+<script src="Style/interative.js"></script>
+</html>
