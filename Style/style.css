@@ -227,7 +227,7 @@ body{
         margin: 0;
         height: 80%;
         width: 80%;
-        margin: 50px 0 50px 0;
+        margin: 100px 0 50px 0;
     }
 
     .temas_linha{
@@ -246,10 +246,143 @@ body{
     }
 }
 
+@media (width < 650px){
+    .conteudo_Esquerdo{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #Eu{
+        width: 125px;
+        height: 125px;
+        margin: 0 50px 125px 50px;
+    }
+
+    .main_conjunto_links{
+        flex-direction: column;
+    }
+
+    .main_links{
+        width: 80%;
+    }
+}
+
+@media (width < 450px){
+    .main_links{
+        width: 50%;
+    }
 
 
+    .main_links > span{
+        display: none;
+        visibility: hidden;
+    }
+}
 
+@media (width < 350px){
+    .cabecalho_opcao{
+        font-size: small;
+    }
 
+    .cabecalho_opcao > img{
+        width: 20px;
+        height: 20px;
+    }
 
+    #Eu{
+        width: 50px;
+        height: 50px;
+        margin: 0 0 200px 50px;
+    }
 
+    .main_links{
+        width: 20px;
+        height: 20px
+    }
 
+    .main_links > img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .main_caixaTexto{
+        margin-top: 50px;
+        font-size: small;
+    }
+
+    .main_links:hover{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .main_links:hover img{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+
+@media (width < 245px){
+    .conteudo_Esquerdo{
+        flex-direction: column;
+    }
+
+    #Eu{
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .main_conjunto_links{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main_links{
+        margin-left: 10px;
+    }
+
+    .cabecalho_opcao > p{
+        display: none;
+    }
+
+    .temas_linha{
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .temas_linha > input{
+        width: 30px;
+        height: 30px;
+    }
+
+    .temas_linha > label{
+        font-size: medium;
+    }
+}
+
+@media (width < 200px){
+    .main_links{
+        width: 10px;
+        height: 10px;
+    }
+
+    .main_links > img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/*
+.main_links:hover{
+    background-color: var(--cor-fundo-header-hover);
+    color: var(--cor-texto-hover);
+    width: 105%;
+    height: 40px;
+}
+
+.main_links:hover img{
+    width: 40px;
+    height: 40px;
+}
+*/
