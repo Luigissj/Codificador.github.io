@@ -1,16 +1,9 @@
-var tema_valor_atual;
 var tema_valor_novo;
 verificar_Mudança_Tema();
 
 function verificar_Mudança_Tema(){
     tema_valor_novo = document.querySelector(".botao_nav:checked").value;
-    if (tema_valor_atual == tema_valor_novo){
-        alert("Você ja está nesse tema")
-    } else {
-        tema_valor_atual = document.querySelector(".botao_nav:checked").value;
-        alert("Mudando tema...");
-        mudar_Tema(tema_valor_novo);
-    }
+    mudar_Tema(tema_valor_novo);
 }
 
 function mudar_Tema(valor_tema){
