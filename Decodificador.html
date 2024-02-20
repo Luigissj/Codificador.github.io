@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/style_main_decodificador.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_navegacao">
+            <a class="cabecalho_opcao" href="index.html">
+                <img class="cabecalho_SobreMim_Imagem" src="Image/Sobre mim - Light.png" alt="Sobre mim">
+                <p class="cabecalho_SobreMim_Texto">Sobre Mim</p>
+            </a>
+            <a class="cabecalho_opcao" href="Decodificador.html">
+                <img class="cabecalho_ENIGMA_Imagem" src="Image/Decodificador - Light.png" alt="Descriptografia">
+                <p class="cabecalho_ENIGMA_Texto">ENIGMA</p>
+            </a>
+        </div>
+    </header>
+    <main class="conteudo_Principal">
+        <div class="decodificador_principal">
+            <div class="conteudo_decodificador">
+                <textarea class="codificador" name="" id="" cols="45" rows="15" placeholder="Codificador"></textarea>
+                <div class="conteudo_decodificar_botoes">
+                    <button class="decodificar_copiar_codificar" onclick="copiarTexto('codificador')">Copiar</button> 
+                    <button class="codificador_colar_codificar" onclick="colarTexto('codificador')">Colar</button>
+                </div>
+            </div>
+            <img src="" alt="" class="engrenagem_cano">
+            <div class="conteudo_decodificador">
+                <textarea class="decodificador" name="" id="" cols="45" rows="15" placeholder="Decodificador"></textarea>
+                <div class="conteudo_decodificar_botoes">
+                    <button class="decodificar_copiar_decodificar" onclick="copiarTexto('decodificador')">Copiar</button>
+                    <button class="codificador_colar_decodificar" onclick="colarTexto('decodificador')">Colar</button>
+                </div>
+            </div>
+        </div>
+            <div class="conteudo_botoes">
+                <p class="botao_criptografar" onclick="codificarTexto()">
+                    <span>
+                        Criptografar
+                    </span>
+                </p>
+                <p class="botao_descriptografar" onclick="decodificarTexto()">
+                    <span>
+                        Descriptografar
+                    </span>
+                </p>
+            </div>
+    </main>
+    <footer class="menu_lateral">
+        <form class="temas">
+            <ul class="opcoes_tema">
+                <li class="temas_linha">
+                    <input type="radio" class="botao_nav" name="temas" id="botao_Claro" value="Claro" onclick="verificar_Mudança_Tema()">
+                    <label for="botao_nav" class="1">Claro</label>
+                </li>
+                <li class="temas_linha">
+                    <input type="radio" class="botao_nav" name="temas" id="botao_Escuro" value="Escuro" onclick="verificar_Mudança_Tema()">
+                    <label for="botao_nav" class="2">Escuro</label>
+                </li>
+            </ul>
+        </form>
+    </footer>
+    <script src="JavaScript/Interative_Decodificador.js"></script>
+    <script src="JavaScript/Decodificador_mecanismo.js"></script>
+</body>
+</html>
